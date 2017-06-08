@@ -1,0 +1,20 @@
+PUT /_template/datasource_all
+{
+  "template": "datasource-*", 
+  "order":    1, 
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 3
+  },
+  "mappings": {
+    "_default_": { 
+      "_all": {
+        "enabled": false
+      }
+    },
+    "location_geo": {
+      "type":    "geo_point",
+      "lat_lon": true 
+    }    
+  }
+}
