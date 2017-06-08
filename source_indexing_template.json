@@ -12,9 +12,16 @@ PUT /_template/datasource_all
         "enabled": false
       }
     },
-    "location_geo": {
-      "type":    "geo_point",
-      "lat_lon": true 
-    }    
+    "entry":{
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
+      
+    }
   }
 }
