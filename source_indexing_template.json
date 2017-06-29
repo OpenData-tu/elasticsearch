@@ -12,7 +12,7 @@ PUT /_template/datasource_all
         "enabled": false
       }
     },
-    "entry":{
+    "measurement":{
       "properties": {
         "device": {"type": "keyword"},
         "location": {"type": "geo_point"},
