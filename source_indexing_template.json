@@ -14,11 +14,12 @@ PUT /_template/datasource_all
     },
     "entry":{
       "properties": {
-        "device": {"type": "string"},
+        "device": {"type": "keyword"},
         "location": {"type": "geo_point"},
-        "device": {"type":"string"},
-        "sensor": {"type":"string"},
-        "license": {"type":"string"},
+        "timestamp": {"type":"date"},
+        "timestamp_record": {"type":"date"},
+        "sensor": {"type":"text"},
+        "license": {"type":"text"},
         "observation_value": {"type":"float"},
         "quality":{"type":"byte"},
         "height":{"type": "scaled_float",
